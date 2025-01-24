@@ -18,7 +18,7 @@ function startGame(){
     draw = 0;
     cellMarked  = ['','','','','','','','',''];
     player = true;
-    playerMsg.innerHTML = `player:${player?"X":"O"} to move`;
+    playerMsg.innerHTML = `player:${player?"X":"O"}`;
 } startGame();
 
 function reStart(){
@@ -46,7 +46,7 @@ function mark(id){
         return;
     }
     player = !player;
-    playerMsg.innerHTML = `player:${player?"X":"O"}  to move`;
+    playerMsg.innerHTML = `player:${player?"X":"O"}`;
 }
 
 const winComb = [
